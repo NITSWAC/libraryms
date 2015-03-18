@@ -6,5 +6,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'libraryms.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^librarian/', include('librarian.urls',namespace='librarian')),
     url(r'^admin/', include(admin.site.urls)),
 )
